@@ -1,0 +1,11 @@
+Model Information:
+* title:	Matterhorn 1:30.000 (DEMto3D)
+* source:	https://sketchfab.com/3d-models/matterhorn-130000-demto3d-cc16427e01814381b68b09ebd01dcd6c
+* author:	jawensi (https://sketchfab.com/jawensi)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Matterhorn 1:30.000 (DEMto3D)" (https://sketchfab.com/3d-models/matterhorn-130000-demto3d-cc16427e01814381b68b09ebd01dcd6c) by jawensi (https://sketchfab.com/jawensi) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
