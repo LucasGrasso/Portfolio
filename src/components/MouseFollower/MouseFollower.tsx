@@ -3,7 +3,7 @@ import styles from './MouseFollower.module.css';
 
 const MouseFollower = () => {
 	useEffect(() => {
-		let cursor = document.getElementById("cursor");
+		const cursor = document.getElementById("cursor");
 
 
 		const updateCircle = (e: MouseEvent) => {

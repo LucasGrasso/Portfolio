@@ -1,9 +1,7 @@
 import TDCanvas from "../3DCanvas/3DCanvas"
 import styles from './Home.module.css';
 
-type Props = {}
-
-export default function Home({}: Props) {
+export default function Home() {
 	return (
 		<div className={styles.home}>
 			{/* <TitleAcsiiArt /> */}

@@ -1,0 +1,14 @@
+.aboutMe {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.aboutMe>span {
+	font-size: clamp(1rem, 1vw, 2rem);
+	padding-left: 5%;
+	padding-right: 5%;
+}

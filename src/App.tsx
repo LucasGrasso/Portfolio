@@ -3,6 +3,8 @@
 
 import Home from "./components/Home/Home"
 import MouseFollower from "./components/MouseFollower/MouseFollower"
+import AboutMe from "./components/Sections/AboutMe/AboutMe";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
 	const isNotMobile = window.innerWidth > 768;
@@ -11,9 +13,8 @@ export default function App() {
 			{isNotMobile && <MouseFollower />}
 			<div className="App">
 				<Home />
-				<div style={{
-					height: "400vh"
-				}}></div>
+				<AboutMe />
+				<Footer />
 			</div>
 		</>
 	)
