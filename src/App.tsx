@@ -5,6 +5,7 @@ import Home from "./components/Home/Home"
 import MouseFollower from "./components/MouseFollower/MouseFollower"
 import AboutMe from "./components/Sections/AboutMe/AboutMe";
 import Footer from "./components/Footer/Footer";
+import Skills from "./components/Sections/Skills/Skills";
 
 export default function App() {
 	const isNotMobile = window.innerWidth > 768;
@@ -14,6 +15,7 @@ export default function App() {
 			<div className="App">
 				<Home />
 				<AboutMe />
+				<Skills />
 				<Footer />
 			</div>
 		</>

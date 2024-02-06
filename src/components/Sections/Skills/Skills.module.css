@@ -1,0 +1,75 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.titleWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 3%;
+
+}
+
+.titleWrapper>span {
+	font-size: clamp(1rem, 1vw, 2rem);
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 0;
+
+}
+
+.math {
+	height: 100%;
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+.skillsWrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	animation: swipe 25s linear infinite backwards;
+	overflow: hidden;
+	width: fit-content;
+	white-space: nowrap;
+}
+
+.language {
+	background-size: cover;
+}
+
+
+@keyframes swipe {
+	0% {
+		transform: translate(0);
+	}
+
+	100% {
+		transform: translate(-100%);
+	}
+}
+
+.language>pre {
+	background-color: #272822 !important;
+}
+
+.fluentLanguages {
+	margin-top: 2%;
+}
+
+.list {
+	font-size: clamp(1rem, 1vw, 2rem);
+}

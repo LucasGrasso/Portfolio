@@ -12,6 +12,9 @@ export default function Footer() {
 			<span>
 				Lucas Grasso Ramos
 			</span>
+			<span>
+				lucasgrassoramos@gmail.com
+			</span>
 		</div>
 	)
 }
