@@ -9,15 +9,15 @@ export default function Figures() {
 			<rect width="144.861" height="201" transform="translate(145.57)" fill="black" />
 			<path d="M218.001 53.948L190.137 101.635L218.001 118.667L245.866 101.635L218.001 53.948ZM190.137 107.313L218.001 147.052L245.866 107.313L218.001 124.344L190.137 107.313Z" fill="white" />
 			<rect width="144.861" height="201" transform="translate(290.431)" fill="black" />
-			<circle cx="329.174" cy="66.8127" r="11.8437" fill="white" />
+			<circle cx="329.174" cy="66.8127" r="11.8437" fill="#74ACDF" />
 			<circle cx="329.174" cy="100.5" r="11.8437" fill="white" />
-			<circle cx="329.174" cy="134.187" r="11.8437" fill="white" />
-			<circle cx="362.861" cy="66.8127" r="11.8437" fill="white" />
-			<circle cx="362.861" cy="100.5" r="11.8437" fill="white" />
-			<circle cx="362.861" cy="134.187" r="11.8437" fill="white" />
-			<circle cx="396.549" cy="66.8127" r="11.8437" fill="white" />
+			<circle cx="329.174" cy="134.187" r="11.8437" fill="#74ACDF" />
+			<circle cx="362.861" cy="66.8127" r="11.8437" fill="#74ACDF" />
+			<circle cx="362.861" cy="100.5" r="11.8437" fill="#F6B40E" />
+			<circle cx="362.861" cy="134.187" r="11.8437" fill="#74ACDF" />
+			<circle cx="396.549" cy="66.8127" r="11.8437" fill="#74ACDF" />
 			<circle cx="396.549" cy="100.5" r="11.8437" fill="white" />
-			<circle cx="396.549" cy="134.187" r="11.8437" fill="white" />
+			<circle cx="396.549" cy="134.187" r="11.8437" fill="#74ACDF" />
 		</svg>
 
 	)
