@@ -12,7 +12,7 @@ export default function Footer() {
 			<span>
 				Lucas Grasso Ramos
 			</span>
-			<span>
+			<span className={styles.mail}>
 				lucasgrassoramos@gmail.com
 			</span>
 		</div>
