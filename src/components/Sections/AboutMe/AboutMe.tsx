@@ -1,4 +1,4 @@
-import Figures from '../../../assets/Figures';
+import Figures from '../../../assets/Figures/Figures';
 import styles from './AboutMe.module.css';
 
 export default function AboutMe() {
