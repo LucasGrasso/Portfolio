@@ -85,39 +85,39 @@ const toolboxItems = [
 	},
 	{
 		name: "Jupyter",
-		category: "python"
+		category: "Python"
 	},
 	{
 		name: "Pandas",
-		category: "python"
+		category: "Python"
 	},
 	{
 		name: "Numpy",
-		category: "python"
+		category: "Python"
 	},
 	{
 		name: "Scipy",
-		category: "python"
+		category: "Python"
 	},
 	{
 		name: "Matplotlib",
-		category: "python"
+		category: "Python"
 	},
 	{
 		name: "Seaborn",
-		category: "python"
+		category: "Python"
 	},
 	{
 		name: "Scikit-learn",
-		category: "python"
+		category: "Python"
 	},
 	{
 		name: "BeautifulSoup",
-		category: "python"
+		category: "Python"
 	},
 	{
 		name: "Selenium",
-		category: "python"
+		category: "Python"
 	},
 ]
 
@@ -130,6 +130,6 @@ const toolboxItemsPerCategory = toolboxItems.reduce((acc: Record<string, string[
 	return acc;
 }, {} as Record<string, string[]>); // Update the type of the accumulator
 
-console.log(toolboxItemsPerCategory);
+const categories = Object.keys(toolboxItemsPerCategory);
 
-export default toolboxItems;
+export { toolboxItems, toolboxItemsPerCategory, categories };

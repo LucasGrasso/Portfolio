@@ -1,6 +1,6 @@
 import styles from './Skills.module.css';
 import languages from './languages';
-import toolboxItems from './toolbox';
+import { toolboxItems, categories } from './toolbox';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -50,7 +50,13 @@ export default function Skills() {
 		const mainHue = mainHueOfCategory(category);
 		const l = Math.floor(Math.random() * (50 - 20 + 1) + 20);
 		const s = Math.floor(Math.random() * (80 - 50 + 1) + 50);
-		return `hsl(${mainHue}, ${s}%, ${l}%)`;
+		return `hsla(${mainHue}, ${s}%, ${l}%, 0.45)`;
+	}
+
+
+	const randomGreyscale = (): string => {
+		const l = Math.floor(Math.random() * (40 - 15 + 1) + 15);
+		return `hsla(0, 0%, ${l}%)`;
 	}
 
 	return (
@@ -108,8 +114,8 @@ export default function Skills() {
 					But i'm the most fluent in:
 				</h2>
 				<ul className={styles.list}>
-					<li>Python</li>
 					<li>Solidity</li>
+					<li>Python</li>
 					<li>Typescript</li>
 				</ul>
 			</div>
@@ -123,6 +129,18 @@ export default function Skills() {
 							return (
 								<div key={index} className={styles.tool} style={{ "--color": randomColourPerCategory(item.category) } as React.CSSProperties}>
 									<span>{item.name}</span>
+								</div>
+							)
+						})
+					}
+				</div>
+				<div className={styles.toolboxLegend}>
+					{
+						categories.map((category, index) => {
+							return (
+								<div key={index} className={styles.legendItem}>
+									<div className={styles.rectangle} style={{ "--color": randomColourPerCategory(category) } as React.CSSProperties} />
+									<span>{category}</span>
 								</div>
 							)
 						})

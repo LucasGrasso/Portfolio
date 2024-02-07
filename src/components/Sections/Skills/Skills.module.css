@@ -92,6 +92,7 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	gap: 1rem;
 }
 
 .toolbox {
@@ -106,6 +107,32 @@
 	background-color: var(--color);
 	border-radius: 5px;
 	padding: 8px;
+	margin: 5px;
+}
+
+.toolboxLegend {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 1rem;
+}
+
+.legendItem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 0.2rem;
+}
+
+.rectangle {
+	background-color: var(--color);
+	border-radius: 5px;
+	padding: 8px;
+	width: 35px;
+	height: 1px;
 	margin: 5px;
 }
 
