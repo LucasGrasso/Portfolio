@@ -14,19 +14,19 @@ const projects: Project[] = [
 	},
 	{
 		title: 'Beaconchain utils',
-		description: 'Typescript utilities for working with the Eth2 Beacon Chain',
+		description: 'Typescript utilities for working with the Eth2 Beacon Chain.',
 		url: 'https://www.npmjs.com/package/@decentstake/beaconchain-utils',
 		tags: ['Blockchain', 'Typescript']
 	},
 	{
 		title: 'Zerti',
-		description: 'Web3 project whose main objective is to ensure the validity and trust of certifications based on the immutability and transparency of blockchain technology',
+		description: 'Web3 project whose main objective is to ensure the validity and trust of certifications based on the immutability and transparency of blockchain technology.',
 		url: 'https://github.com/ZertiApp',
 		tags: ['Blockchain', 'Solidity', 'Typescript', 'React']
 	},
 	{
 		title: 'CMD Portfolio',
-		description: 'A powershell-like portfolio website built with React and Typescript',
+		description: 'A powershell-like portfolio website built with React and Typescript.',
 		url: 'https://cmd.lucasgrasso.com.ar',
 		tags: ['Frontend', 'React']
 	},
@@ -38,7 +38,7 @@ const projects: Project[] = [
 	},
 	{
 		title: 'EliminarRtasDeParciales',
-		description: 'An app to remove answers from a PDF file, made in fastAPI and React',
+		description: 'An app to remove answers from a PDF file, made in fastAPI and React.',
 		url: 'https://borraryestudiar.lucasgrasso.com.ar/',
 		tags: ['Frontend', 'Backend', 'Typescript', 'React', 'Python']
 	}

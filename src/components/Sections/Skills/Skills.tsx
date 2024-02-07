@@ -46,6 +46,19 @@ export default function Skills() {
 		}
 	}
 
+	const mainColourOfCategory = (category: string): string => {
+		if (category === "BackEnd") {
+			return "hsla(221, 80%, 44%, 0.45)";
+		} else if (category === "FrontEnd") {
+			return "hsla(360, 52%, 50%, 0.45)";
+		} else if (category === "Blockchain") {
+			return "hsla(274, 63%, 50%, 0.45)";
+		} else {
+			return "hsla(120, 72%, 45%, 0.45)";
+		}
+
+	}
+
 	const randomColourPerCategory = (category: string): string => {
 		const mainHue = mainHueOfCategory(category);
 		const l = Math.floor(Math.random() * (50 - 20 + 1) + 20);
@@ -141,7 +154,7 @@ export default function Skills() {
 						categories.map((category, index) => {
 							return (
 								<div key={index} className={styles.legendItem}>
-									<div className={styles.rectangle} style={{ "--color": randomColourPerCategory(category) } as React.CSSProperties} />
+									<div className={styles.rectangle} style={{ "--color": mainColourOfCategory(category) } as React.CSSProperties} />
 									<span>{category}</span>
 								</div>
 							)

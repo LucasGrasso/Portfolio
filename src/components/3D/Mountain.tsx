@@ -36,7 +36,7 @@ export default function Mountain(props: JSX.IntrinsicElements['group']) {
 
 	useFrame((_, delta) => {
 		if (ref.current) {
-			ref.current.rotation.y = ref.current.rotation.y += delta / 2;
+			ref.current.rotation.y = ref.current.rotation.y += delta / 3;
 		}
 	});
 
