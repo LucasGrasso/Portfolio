@@ -60,7 +60,7 @@ export default function Skills() {
 	} */
 
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id="toolbox">
 			<div className={styles.titleWrapper}>
 				<div className={styles.title}>
 					<div dangerouslySetInnerHTML={{ __html: mathML1 }} className={styles.math} />
@@ -68,45 +68,47 @@ export default function Skills() {
 				</div>
 				<span>...If i could.</span>
 			</div>
-			<div className={styles.animationWrapper}>
-				<div className={styles.skillsWrapper}>
-					{
-						languages.map((language, index) => {
-							return (
-								<div key={index}>
-									<SyntaxHighlighter className={styles.language} language={language.language} style={atomDark}>
-										{language.text}
-									</SyntaxHighlighter>
-								</div>
-							)
-						})
-					}
-				</div>
-				<div className={styles.skillsWrapper}>
-					{
-						languages.map((language, index) => {
-							return (
-								<div key={index}>
-									<SyntaxHighlighter className={styles.language} language={language.language} style={atomDark}>
-										{language.text}
-									</SyntaxHighlighter>
-								</div>
-							)
-						})
-					}
-				</div>
-				<div className={styles.skillsWrapper}>
-					{
-						languages.map((language, index) => {
-							return (
-								<div key={index}>
-									<SyntaxHighlighter className={styles.language} language={language.language} style={atomDark}>
-										{language.text}
-									</SyntaxHighlighter>
-								</div>
-							)
-						})
-					}
+			<div className={styles.animationOuterWrapper}>
+				<div className={styles.animationWrapper}>
+					<div className={styles.skillsWrapper}>
+						{
+							languages.map((language, index) => {
+								return (
+									<div key={index}>
+										<SyntaxHighlighter className={styles.language} language={language.language} style={atomDark}>
+											{language.text}
+										</SyntaxHighlighter>
+									</div>
+								)
+							})
+						}
+					</div>
+					<div className={styles.skillsWrapper}>
+						{
+							languages.map((language, index) => {
+								return (
+									<div key={index}>
+										<SyntaxHighlighter className={styles.language} language={language.language} style={atomDark}>
+											{language.text}
+										</SyntaxHighlighter>
+									</div>
+								)
+							})
+						}
+					</div>
+					<div className={styles.skillsWrapper}>
+						{
+							languages.map((language, index) => {
+								return (
+									<div key={index}>
+										<SyntaxHighlighter className={styles.language} language={language.language} style={atomDark}>
+											{language.text}
+										</SyntaxHighlighter>
+									</div>
+								)
+							})
+						}
+					</div>
 				</div>
 			</div>
 			<div className={styles.fluentLanguages}>

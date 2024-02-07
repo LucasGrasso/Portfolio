@@ -4,6 +4,7 @@
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
+	height: 90vh;
 }
 
 .titleWrapper {
@@ -32,12 +33,18 @@
 
 .math {
 	height: 100%;
-	font-size: 3.2em;
-	line-height: 1.1;
+	font-size: 3.2rem;
+}
+
+.animationOuterWrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
 }
 
 .animationWrapper {
 	display: flex;
+	width: fit-content;
 }
 
 .skillsWrapper {
@@ -84,6 +91,8 @@
 
 .list {
 	font-size: clamp(1.2rem, 1vw, 2rem);
+	display: table;
+	margin: 0 auto;
 }
 
 .toolboxWrapper {
@@ -98,7 +107,7 @@
 .toolbox {
 	display: flex;
 	flex-wrap: wrap;
-	width: 90%;
+	width: 80%;
 	font-family: 'Inconsolata', monospace;
 	justify-content: center;
 }
@@ -144,5 +153,13 @@
 		justify-content: center;
 		text-align: center;
 		gap: 0;
+	}
+
+	.math {
+		font-size: 2rem;
+	}
+
+	.toolbox {
+		width: 95%;
 	}
 }
