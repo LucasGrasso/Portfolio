@@ -54,10 +54,10 @@ export default function Skills() {
 	}
 
 
-	const randomGreyscale = (): string => {
+	/* const randomGreyscale = (): string => {
 		const l = Math.floor(Math.random() * (40 - 15 + 1) + 15);
 		return `hsla(0, 0%, ${l}%)`;
-	}
+	} */
 
 	return (
 		<div className={styles.wrapper}>
