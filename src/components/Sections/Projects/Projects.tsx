@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styles from './Projects.module.css';
-import { projects, tags } from './projectsInfo';
+import { projects } from './projectsInfo';
 
 export default function Projects() {
-	const [filters, setFilters] = useState<string[]>([]);
+	const [filters,] = useState<string[]>([]);
 
 	/* const selectOptions = tags.map(tag => {
 		return {
