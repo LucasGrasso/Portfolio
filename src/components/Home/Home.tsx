@@ -13,9 +13,9 @@ export default function Home() {
 				<h1>
 					Lucas Grasso Ramos
 				</h1>
-				<h3>
+				<span className={styles.subtitle}>
 					Blockchain & Full-stack Dev.
-				</h3>
+				</span>
 				{/* <div className={styles.nav}>
 					<ul className={styles.navList}>
 						<li>

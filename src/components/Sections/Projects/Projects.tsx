@@ -14,9 +14,9 @@ export default function Projects() {
 
 	return (
 		<div className={styles.wrapper} id="projects">
-			<h1>
+			<h2 className={styles.title}>
 				Some of my projects:
-			</h1>
+			</h2>
 			<div className={styles.projectsOuterWrapper}>
 				<div className={styles.projectsWrapper}>
 					{

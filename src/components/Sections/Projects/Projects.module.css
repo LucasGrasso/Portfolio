@@ -7,6 +7,11 @@
 	gap: 3rem;
 }
 
+.title {
+	font-size: 3.2em;
+	font-weight: bold;
+}
+
 .projectsOuterWrapper {
 	display: flex;
 	flex-direction: row;

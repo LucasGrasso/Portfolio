@@ -17,7 +17,7 @@
 }
 
 .info h1,
-.info h3 {
+.info .subtitle {
 	background-color: black;
 	padding: 5px;
 	margin: 0;
@@ -26,6 +26,12 @@
 .canvas {
 	height: 100%;
 	width: 100%;
+}
+
+.subtitle {
+	color: white;
+	font-size: 1.3em;
+	font-weight: 500;
 }
 
 /* .nav {
