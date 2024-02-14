@@ -12,7 +12,11 @@ const toolboxItems = [
 		category: "BackEnd"
 	},
 	{
-		name: "fastAPI",
+		name: "FastAPI",
+		category: "BackEnd"
+	},
+	{
+		name: "Sanic",
 		category: "BackEnd"
 	},
 	{
