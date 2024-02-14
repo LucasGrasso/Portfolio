@@ -1,10 +1,10 @@
-import TDCanvas from "../3DCanvas/3DCanvas"
+import TDCanvas from "../../3DCanvas/3DCanvas"
 import styles from './Home.module.css';
+
 
 export default function Home() {
 	return (
 		<div className={styles.home}>
-			{/* <TitleAcsiiArt /> */}
 			<div className={styles.canvas} style={{ pointerEvents: "none" }}>
 				<TDCanvas />
 			</div>

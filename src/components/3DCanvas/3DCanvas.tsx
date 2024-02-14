@@ -16,29 +16,31 @@ export default function TDCanvas() {
 	const cameraRef = useRef<THREE.PerspectiveCamera>();
 
 	return (
-		<Canvas className={styles.canvas}>
-			<color attach="background" args={['black']} />
-			<spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-			<pointLight position={[-10, -10, -10]} />
-			<Mountain />
-			<PerspectiveCamera
-				makeDefault
-				position={defaultCameraPosition}
-				ref={cameraRef}
-			/>
-			<OrbitControls
-				enableDamping={false}
-				enablePan={false}
-				enableZoom={false}
-				enableRotate={false}
-				maxPolarAngle={Math.PI / 2}
-				minPolarAngle={Math.PI / 2}
-				minDistance={desiredDistance}
-				maxDistance={desiredDistance}
-				target={defaultTarget}
-				camera={cameraRef.current}
-			/>
-			<AsciiRenderer fgColor={color} bgColor="black" />
-		</Canvas>
+		<div className={styles.canvasWrapper}>
+			<Canvas className={styles.canvas}>
+				<color attach="background" args={['black']} />
+				<spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+				<pointLight position={[-10, -10, -10]} />
+				<Mountain />
+				<PerspectiveCamera
+					makeDefault
+					position={defaultCameraPosition}
+					ref={cameraRef}
+				/>
+				<OrbitControls
+					enableDamping={false}
+					enablePan={false}
+					enableZoom={false}
+					enableRotate={false}
+					maxPolarAngle={Math.PI / 2}
+					minPolarAngle={Math.PI / 2}
+					minDistance={desiredDistance}
+					maxDistance={desiredDistance}
+					target={defaultTarget}
+					camera={cameraRef.current}
+				/>
+				<AsciiRenderer fgColor={color} bgColor="black" />
+			</Canvas>
+		</div>
 	);
 }
