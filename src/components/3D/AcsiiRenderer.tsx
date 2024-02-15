@@ -47,7 +47,7 @@ export default function AsciiRenderer({
 	}, [effect, size])
 
 	// Take over render-loop (that is what the index is for)
-	useFrame((_) => {
+	useFrame(() => {
 		effect.render(scene, camera)
 	}, renderIndex)
 

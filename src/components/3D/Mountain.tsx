@@ -11,7 +11,7 @@ import { useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 import { GLTF } from 'three-stdlib'
 import { useFrame } from '@react-three/fiber'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 
 type GLTFResult = GLTF & {
 	nodes: {
@@ -32,7 +32,7 @@ type GLTFResult = GLTF & {
 export default function Mountain(props: JSX.IntrinsicElements['group']) {
 	const { nodes, materials } = useGLTF('mountain/scene.gltf') as GLTFResult
 
-	const ref: React.RefObject<any> = useRef()
+	const ref = useRef<THREE.Group | null>(null)
 
 	useFrame((_, delta) => {
 		if (ref.current) {
