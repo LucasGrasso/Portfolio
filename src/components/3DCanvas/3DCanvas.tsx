@@ -13,7 +13,7 @@ export default function TDCanvas() {
 	const defaultTarget = new Vector3(-0.19672038989012175, 0.34252186707017224, -0.19084934552398422);
 	const desiredDistance = 2.8130368240544836;
 
-	const cameraRef = useRef<THREE.PerspectiveCamera>(null);
+	const cameraRef = useRef<THREE.PerspectiveCamera | undefined>(undefined);
 
 	return (
 		<div className={styles.canvasWrapper}>
@@ -27,20 +27,18 @@ export default function TDCanvas() {
 					position={defaultCameraPosition}
 					ref={cameraRef}
 				/>
-				{cameraRef.current &&
-					<OrbitControls
-						enableDamping={false}
-						enablePan={false}
-						enableZoom={false}
-						enableRotate={false}
-						maxPolarAngle={Math.PI / 2}
-						minPolarAngle={Math.PI / 2}
-						minDistance={desiredDistance}
-						maxDistance={desiredDistance}
-						target={defaultTarget}
-						camera={cameraRef.current}
-					/>
-				}
+				<OrbitControls
+					enableDamping={false}
+					enablePan={false}
+					enableZoom={false}
+					enableRotate={false}
+					maxPolarAngle={Math.PI / 2}
+					minPolarAngle={Math.PI / 2}
+					minDistance={desiredDistance}
+					maxDistance={desiredDistance}
+					target={defaultTarget}
+					camera={cameraRef.current}
+				/>
 				<AsciiRenderer fgColor={color} bgColor="black" />
 			</Canvas>
 		</div>
