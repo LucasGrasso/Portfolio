@@ -30,7 +30,7 @@ type GLTFResult = GLTF & {
 }
 
 export default function Mountain(props: JSX.IntrinsicElements['group']) {
-	const { nodes, materials } = useGLTF('mountain/scene.gltf') as GLTFResult
+	const { nodes, materials } = useGLTF('mountain/scene.glb') as GLTFResult
 
 	const ref = useRef<THREE.Group | null>(null)
 
@@ -61,4 +61,4 @@ export default function Mountain(props: JSX.IntrinsicElements['group']) {
 	)
 }
 
-useGLTF.preload('mountain/scene.gltf')
+useGLTF.preload('mountain/scene.glb')
