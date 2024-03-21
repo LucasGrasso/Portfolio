@@ -17,7 +17,9 @@ const MouseFollower = () => {
 
 		}
 
-		document.body.addEventListener("mousemove", updateCircle);
+		document.body.addEventListener("mousemove", updateCircle, {
+			passive: true
+		});
 
 		return () => {
 			document.removeEventListener("mousemove", updateCircle);
