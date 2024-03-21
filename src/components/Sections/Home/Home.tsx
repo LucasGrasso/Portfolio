@@ -5,7 +5,7 @@ import styles from './Home.module.css';
 export default function Home() {
 	return (
 		<div className={styles.home}>
-			<div className={styles.canvas} style={{ pointerEvents: "none" }}>
+			<div className={styles.canvas} style={{ pointerEvents: "none", display: "flex" }}>
 				<TDCanvas />
 			</div>
 
