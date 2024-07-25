@@ -109,21 +109,6 @@
 	gap: 1.5rem;
 }
 
-.toolbox {
-	display: flex;
-	flex-wrap: wrap;
-	width: 80%;
-	font-family: 'Inconsolata', monospace;
-	justify-content: center;
-}
-
-.tool {
-	background-color: var(--color);
-	border-radius: 5px;
-	padding: 8px;
-	margin: 5px;
-}
-
 .toolboxLegend {
 	display: flex;
 	flex-wrap: wrap;
@@ -162,9 +147,5 @@
 
 	.math {
 		font-size: 2rem;
-	}
-
-	.toolbox {
-		width: 95%;
 	}
 }

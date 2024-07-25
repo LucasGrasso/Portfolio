@@ -1,77 +1,14 @@
 import styles from './Skills.module.css';
-import languages from './languages';
-import { toolboxItems, categories } from './toolbox';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
+
+import languages from './languages';
+
+import { Toolbox, categories, mainColourOfCategory } from '../../Toolbox';
+
+import { mathML1, mathML2 } from './Skills.constants';
 
 export default function Skills() {
-	const mathML1 = `
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
-		<mi>Given </mi>
-		<mspace width="0.2em"></mspace>
-  		<mi>n</mi>
-  		<mo>&#8712;</mo>
-  		<mi>&#x2115;</mi>
-		<mo>,</mo>
-  	</math>
-  `;
-
-	const mathML2 = `
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
-		<mi>I'd speak</mi>
-		<mspace width="0.2em"></mspace>
-		<mi>n</mi>
-		<mspace width="0.2em"></mspace>
-		<mi>languages</mi>
-  	</math>
-  `;
-
-	const shuffle = (array: Record<string, string>[]) => {
-		for (let i = array.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			[array[i], array[j]] = [array[j], array[i]];
-		}
-		return array;
-	};
-
-	const mainHueOfCategory = (category: string): string => {
-		if (category === "BackEnd") {
-			return "221";
-		} else if (category === "FrontEnd") {
-			return "360";
-		} else if (category === "Blockchain") {
-			return "274";
-		} else {
-			return "120";
-		}
-	}
-
-	const mainColourOfCategory = (category: string): string => {
-		if (category === "BackEnd") {
-			return "hsla(221, 80%, 44%, 0.45)";
-		} else if (category === "FrontEnd") {
-			return "hsla(360, 52%, 50%, 0.45)";
-		} else if (category === "Blockchain") {
-			return "hsla(274, 63%, 50%, 0.45)";
-		} else {
-			return "hsla(120, 72%, 45%, 0.45)";
-		}
-
-	}
-
-	const randomColourPerCategory = (category: string): string => {
-		const mainHue = mainHueOfCategory(category);
-		const l = Math.floor(Math.random() * (50 - 20 + 1) + 20);
-		const s = Math.floor(Math.random() * (80 - 50 + 1) + 50);
-		return `hsla(${mainHue}, ${s}%, ${l}%, 0.45)`;
-	}
-
-
-	/* const randomGreyscale = (): string => {
-		const l = Math.floor(Math.random() * (40 - 15 + 1) + 15);
-		return `hsla(0, 0%, ${l}%)`;
-	} */
-
 	return (
 		<div className={styles.wrapper} id="toolbox">
 			<div className={styles.titleWrapper}>
@@ -138,20 +75,10 @@ export default function Skills() {
 				<h2>
 					And i'm handy with:
 				</h2>
-				<div className={styles.toolbox}>
-					{
-						shuffle(toolboxItems).map((item, index) => {
-							return (
-								<div key={index} className={styles.tool} style={{ "--color": randomColourPerCategory(item.category) } as React.CSSProperties}>
-									<span>{item.name}</span>
-								</div>
-							)
-						})
-					}
-				</div>
+				<Toolbox />
 				<div className={styles.toolboxLegend}>
 					{
-						categories.map((category, index) => {
+						categories.map((category: string, index: number) => {
 							return (
 								<div key={index} className={styles.legendItem}>
 									<div className={styles.rectangle} style={{ "--color": mainColourOfCategory(category) } as React.CSSProperties} />

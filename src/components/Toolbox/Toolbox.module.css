@@ -1,0 +1,20 @@
+.toolbox {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	font-family: 'Inconsolata', monospace;
+	justify-content: center;
+}
+
+.tool {
+	background-color: var(--color);
+	border-radius: 5px;
+	padding: 8px;
+	margin: 5px;
+}
+
+@media (max-width: 880px) {
+	.toolbox {
+		width: 95%;
+	}
+}
